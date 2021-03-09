@@ -1,0 +1,79 @@
+<html>
+    <title>My Third Page</title>
+    <head>
+    <body>
+        <script>
+            function checkForm()
+            {
+                var firstName;
+                firstName = document.getElementById("fName").value;
+                if(firstName == "")
+                {
+                    document.getElementById("fName").style.backgroundColor= "red";
+                    document.getElementById("fName").focus();
+                }
+                else
+                {
+                    document.getElementById("fName").style.backgroundColor= "white";
+                }
+                
+
+                var lastName;
+                lastName = document.getElementById("lName").value;
+                if(lastName == "")
+                {
+                    document.getElementById("lName").style.backgroundColor= "red";
+                    document.getElementById("lName").focus();
+                }
+                else
+                {
+                    document.getElementById("fName").style.backgroundColor= "white";
+                }
+
+
+                var emailAddress;
+                emailAddress = document.getElementById("email").value;
+                if(lastName == "")
+                {
+                    document.getElementById("email").style.backgroundColor= "red";
+                    document.getElementById("email").focus();
+                }
+                else
+                {
+                    document.getElementById("email").style.backgroundColor= "white";
+                }
+
+                
+            
+
+            }
+        </script>
+        </head>
+
+        <h1>Contact Us</h1>
+        <p></p>
+        <form action="">
+            <p>First Name:<input type="text" id="fName"></p>
+
+            <p>Last Name:<input type="text" id="lName"></p>
+
+            <p>Email Address:<input type="text" id="email"></p>
+        </form>
+            <h2>Accept Terms of Agreement</h2>
+            <form action="">
+                <select>
+                    <option>Yes</option>
+                    <option>No</option>
+                </select>
+            </form>
+        <br />
+        <form action="">
+            <td colspan="2"><button id="btnSubmit" onClick="checkForm();">Submit My Info</button></td>
+        
+        <br />
+        <p><a href="homepage.html">Go to Home Page</a></p>
+        <p><a href="secondpage.html">Go To Short Story Page</a></p>
+        <p><a href="mathgamepage.html">Go To Math Game Page</a></p>
+    
+    </body>
+</html>
